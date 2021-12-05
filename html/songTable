@@ -1,0 +1,65 @@
+<table class="table table-parenheight table-hover">
+  <thead>
+    <tr>
+      <th class="text-light text-center p-5">음원 사이트 바로 가기</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">
+        <a href="https://www.melon.com/album/detail.htm?albumId=10556780" target="_blank" class="pe-auto text-light text-decoration-none">
+          Melon (멜론)
+        </a>
+      </th>
+    </tr>
+    <tr>
+      <th scope="row">
+        <a href="https://music.bugs.co.kr/album/20376120?wl_ref=list_tr_07_search" target="_blank" class="pe-auto text-light text-decoration-none ">
+          Bugs! (벅스)
+        </a>  
+      </th>
+    </tr>
+    <tr>
+      <th scope="row">
+        <a href="https://vibe.naver.com/track/44205364" target="_blank" class="pe-auto text-light text-decoration-none ">
+          NAVER VIBE(바이브)
+        </a>  
+      </th>
+    </tr>
+    <tr>
+      <th scope="row">
+        <a href="https://www.music-flo.com/detail/artist/edelndaoz/track?sortType=POPULARITY&roleType=ALL" target="_blank" class="pe-auto text-light text-decoration-none ">
+          Flo(플로) 
+        </a>  
+      </th>
+    </tr>
+    <tr>
+      <th scope="row">
+        <a href="https://www.genie.co.kr/detail/songInfo?xgnm=92150296" target="_blank" class="pe-auto text-light text-decoration-none ">
+          ginie(지니)
+        </a>  
+      </th>
+    </tr>
+    <tr>
+      <th scope="row">
+        <a href="https://www.youtube.com/watch?v=QDfqMZbpEg0" target="_blank" class="pe-auto text-light text-decoration-none ">
+          YouTubemusic(유튜브 뮤직)
+        </a>  
+      </th>
+    </tr>
+    <tr>
+      <th scope="row">
+        <a href="https://music.apple.com/us/album/someday-feat-casepeat-single/1551283786" target="_blank" class="pe-auto text-light text-decoration-none ">
+          Apple Music (애플뮤직)
+        </a>  
+      </th>
+    </tr>
+    <tr>
+      <th scope="row">
+        <a href="https://open.spotify.com/album/51807gsW00NQpdem1dKABI" target="_blank" class="pe-auto text-light text-decoration-none ">
+          Sportily (스포티파이)
+        </a>  
+      </th>
+    </tr>
+  </tbody>
+</table>
