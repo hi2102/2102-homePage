@@ -4,8 +4,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: black;
   color: white;
+
+  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+  overflow: hidden;
 }
 
 html {
@@ -104,4 +106,60 @@ nav {
   list-style: none;
   text-decoration: none;
   color: rgb(200, 200, 200);
+}
+
+
+
+/* 눈오는 효과 */
+
+.fallingSnow {
+  width: 0.5em;
+  height: 0.5em;
+  background-color: #fff;
+  border-radius: 50%;
+  animation: snow  10s linear infinite;
+}
+
+.fallingSnow:nth-of-type(2n) {
+  width: 0.3em;
+  height: 0.3em;
+  animation-duration: 7s;
+  animation-delay: 1s;
+}
+
+.fallingSnow:nth-of-type(2n+1) {
+  animation-duration: 8s;
+  animation-delay: 1s;
+}
+
+.fallingSnow:nth-of-type(9n) {
+  animation-duration: 9s;
+  animation-delay: 3s;
+}
+
+@keyframes snow {
+  0% {
+    opacity: 0.1;
+    transform: translateY(0);
+  } 
+  20% {
+    opacity: 0.5;
+    transform: translate(-15px, 20vh);
+  } 
+  40% {
+    opacity: 1;
+    transform: translate(15px, 40vh);
+  } 
+  60% {
+    opacity: 1;
+    transform: translate(-15px, 60vh);
+  } 
+  80% {
+    opacity: 1;
+    transform: translate(0, 80vh);
+  } 
+  100% {
+    opacity: 1;
+    transform: translateY(100vh);
+  }
 }
