@@ -1,128 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/navStyle.css" />
-    <link rel="stylesheet" href="../styles/snowflake.css" />
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <title>Jiyoung Lee - OFFICIAL</title>
-    <script src="../js/app.js" defer></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.min.js" integrity="sha512-N4kV7GkNv7QR7RX9YF/olywyIgIwNvfEe2nZtfyj73HdjCUkAfOBDbcuJ/cTaN04JKRnw1YG1wnUyNKMsNgg3g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  </head>
-  <body>
-     <!-- // 헤드 네브바 -->
-    <nav>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- css -->
+  <link rel="stylesheet" href="../styles/mainStyle.css" />
+  <!-- 폰트 어썸 -->
+  <script src="https://kit.fontawesome.com/a549db16c3.js" crossorigin="anonymous"></script>
+  <!-- 구글 폰트 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Poiret+One&display=swap" rel="stylesheet">
+  <title>Jiyoung Lee - OFFICIAL</title>
+  <script src="../js/app.js" defer></script>
+
+</head>
+
+<body>
+  <!-- // 헤더 -->
+  <header class="container">
+    <nav class="container-nav">
       <div class="logo">
         <a href="../html/index.html">
-          <img src="../styles/logo.svg" width="100"/>
+          <img src="../styles/logo.svg" width="100" />
         </a>
       </div>
-      <ul class="nav-links">
-        <li>
-          <a href="../html/about.html">About</a>
-        </li>
-        <li>
-          <a href="../html/blog.html">Blog</a>
-        </li>
-        <li>
-          <a href="../html/clips.html">Clips</a>
-        </li>
-        <li>
-          <a href="../html/discography.html">Discography</a>
-        </li>
-      </ol>
-      <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
-        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-        </svg>
+      <ul class="menu">
+        <li><a href="../html/about.html">About</a></li>
+        <li><a href="../html/blog.html">Blog</a></li>
+        <li><a href="../html/clips.html">Clips</a></li>
+        <li><a href="../html/discography.html">Discography</a></li>
+      </ul>
+      <ul class="icons">
+        <li><a href="#"><i class="fab fa-instagram"></i></a>
+        <li><a href="#"><i class="fab fab fa-youtube"></i></a>
+        <li><a href="#"><i class="fab fab fa-soundcloud"></i></a>
+      </ul>
+      <a href="#" class="navbar__toggleBtn">
+        <i class="fas fa-bars"></i>
+      </a>
     </nav>
-    <button type="button" value="눈이와요" onclick="fall()">눈이온당</button>
-    <!--
-    // main carousel
-    <div class="container-fluid text-center">
-      <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active mt-5 pt-5">
-            <p3>Digital Single Album</p3>
-            <img src="../styles/carouselCover.svg" id="albumLink_someday" class="rounded d-block mx-auto py-5" alt="1st Digital Single Album" onclick="move()">
-          </div>
-          
-          <div class="carousel-item mt-5 pt-5">
-            <p3>Rocksinn Album</p3>
-            <img src="../styles/rocksinn.svg" id="albumLink_someday" class="rounded d-block mx-auto py-5" alt="Rocksinn Album">
-          </div>
-          // 여기부터
-          <div class="carousel-item">
-            <img src="..." class="d-block w-100" alt="...">
-          </div>
-          // 여기까지
+  </header>
+  <main style="padding: 1em; display: flex;">
+    <article>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, sed. Voluptates delectus autem hic,
+      assumenda officiis explicabo cum laboriosam repellat ullam aliquid totam maiores, recusandae nam laudantium
+      dignissimos aliquam earum quidem, optio consectetur voluptas. Nisi, voluptas aperiam ducimus dicta molestiae atque
+      nam, quae fuga magni dolorum itaque sint placeat maxime quaerat aspernatur laborum esse vel doloremque! Pariatur,
+      magnam asperiores aliquid exercitationem iste deleniti rem fugit repellat similique quisquam assumenda corrupti ea
+      dolorum porro est. Quisquam nihil voluptates maiores placeat magni consequuntur nemo necessitatibus iusto
+      blanditiis eius consequatur fugiat quam aut doloribus, ea officiis consectetur facere culpa quo similique possimus
+      architecto, alias ad odio. Iusto officia iste non quidem cupiditate vero tempore repudiandae nostrum cum sit
+      sapiente alias tempora corporis quam molestiae, amet fuga aspernatur ad esse delectus in provident mollitia
+      consequatur cumque. Repellendus quod, ipsa consectetur in eum expedita doloribus blanditiis obcaecati cum magnam
+      sunt delectus facilis aliquam harum fugiat quis ut placeat? Aspernatur amet possimus, nulla sequi placeat alias
+      rem aliquid perferendis provident non quisquam porro repudiandae ullam velit vitae maxime necessitatibus sed
+      impedit ea ratione iusto culpa molestias. Aut minima necessitatibus vero sit eveniet sapiente saepe delectus
+      suscipit corporis voluptate nihil laudantium corrupti maxime, error natus voluptatem illo vel, odit aperiam
+      distinctio a ducimus! Hic excepturi iure veniam vitae libero eum molestiae voluptatibus omnis ipsam cupiditate
+      maxime quidem ullam, laborum voluptatum recusandae deleniti architecto, officiis similique atque cum nulla porro
+      at? Assumenda aperiam facilis consequuntur amet praesentium maxime voluptatibus veritatis a omnis? Tempora maxime
+      quaerat eveniet rem! Unde, voluptatum minus. In, dolor, sit quasi odio fugiat saepe aspernatur temporibus omnis,
+      impedit qui neque possimus. Est quae maiores ipsam. Obcaecati, modi accusantium, autem ad facilis error sequi
+      perspiciatis accusamus enim, laboriosam quos inventore distinctio a suscipit repudiandae culpa eum provident
+      veritatis? Rem consequatur non fugit natus beatae voluptatem explicabo tempore molestiae? Dignissimos culpa
+      tempore quasi dolore architecto doloribus eos laudantium! Officiis corporis fugiat eligendi debitis ipsam vero
+      laborum dolores illo iste possimus. Ab quaerat consequuntur maiores laborum commodi, doloremque libero unde fugiat
+      repellendus quia officiis dolor, tenetur aliquam repudiandae. Ut similique eligendi ipsam impedit et vel earum,
+      voluptatem vero aliquam! Cumque suscipit explicabo neque asperiores delectus voluptate fugiat eveniet.
+      Consequuntur tenetur nihil nobis repudiandae? Eligendi nemo accusantium architecto, odio, rerum quam nulla
+      reprehenderit ea voluptatibus corrupti enim. Rerum fuga non enim repellendus quibusdam officiis quasi vitae
+      molestiae ullam id deleniti quae harum voluptates mollitia expedita nisi laborum repudiandae, pariatur provident
+      deserunt doloremque! Nulla tempore inventore molestiae sed non exercitationem, atque temporibus et ullam incidunt
+      ex, ratione sapiente aperiam! Officiis alias atque itaque sint modi necessitatibus optio nisi laudantium nostrum
+      fugiat, voluptatibus quo error cum at minima in provident voluptas illo? Dolores numquam, minima praesentium
+      necessitatibus rem qui ut totam nulla doloremque alias est aperiam odit nihil perspiciatis autem maxime commodi
+      repellat quis facilis excepturi consequuntur! Iure animi eos id harum dolor architecto magni cum, ullam doloremque
+      natus! Magni molestiae vel doloremque voluptatibus eaque quos iure, sint ea laboriosam maiores enim assumenda
+      fugit? Magnam culpa, nobis harum accusantium facere delectus!
+    </article>
 
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>  
-        
-        </div>
-      </div>
-    </div> 
-    
-    // footer
-    <footer class="footer mt-auto py-3 bg-parenheight border-top position-absolute bottom-0 start-0 end-0">
-      <div class="container">
-        <p class="text-center">© 2021 Company, Inc. All rights reserved.</p>
-      </div>
-    </footer> -->
+    <aside>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus error autem dolore eius, saepe perferendis.
+      Ea nam modi similique, maxime rem possimus recusandae numquam rerum in alias reiciendis, velit facilis!</aside>
+  </main>
+  <footer>
+    <ul>
+      <p class="text-center">© 2021 Company, Inc. All rights reserved.</p>
+    </ul>
+  </footer>
+</body>
 
-     <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
-    <!-- 
-    <script>
-      fetch('topMenu').then(function(response) {
-        response.text().then(function(text) {
-          // console.log(text);
-          let items = text.split(',');
-          let tags  = '';
-          
-          for( i=0; i<items.length; i++) {
-            let item = items[i];
-            let tag = '<li><a href="#!'+item+'" onclick="fetchPage(\''+item+'\')">'+item+'</a><li>';
-            console.log(tag);
-            tags += tag;
-          }
-          console.log(items);
-          document.querySelector('nav').innerHTML = tags;
-        })
-      });
-    </script>  -->
-    
-    <script>
-      function createSnow() {
-        const el = document.createElement('div');
-        el.classList.add('fallingSnow');
-        el.style.marginLeft = randomPosition() + 'px';
-        document.body.appendChild(el);
-      }
-
-      function randomPosition() {
-        return Math.floor(Math.random() * window.innerWidth);
-      }
-      
-      function fall() {
-        for(let i = 0; i < 300; i++) {
-          createSnow();
-        }
-      }
-      
-    </script>
-    
-
-  
-  </body>
 </html>

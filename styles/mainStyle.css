@@ -1,0 +1,111 @@
+:root {
+  --padding: 1em 1.5em;
+  --color: rgba(255, 255, 255, 0.97);
+  --background: black;
+  --accent-color: gray;
+}
+
+* {
+  margin: 0;
+  font-family: 'Comfortaa', cursive;
+}
+
+/* 컨테이너 */
+.container {
+  background: var(--background);
+}
+
+.container > .container-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--padding);
+  background: var(--background-color);
+}
+
+/* 햄버거버튼 */
+.container > .container-nav > .navbar__toggleBtn {
+  display: none;
+  position: absolute;
+  top: 18px;
+  left: 24px;
+  font-size: 2em;
+  color: var(--color);
+}
+
+/* 메뉴 */
+.container > .container-nav > .menu {
+  display: flex;
+  padding-left: 0;
+}
+
+.container > .container-nav > .menu > li {
+  list-style: none;
+  padding: var(--padding);
+}
+
+.container > .container-nav > .menu > li > a{
+  text-decoration: none;
+  color: var(--color);
+}
+
+.container > .container-nav > .menu > li > a:hover {
+  cursor: pointer;
+  padding: 0.5em;
+  background: var(--accent-color);
+  border-radius: 0.25em;
+}
+
+/* 아이콘 */
+.container > .container-nav > .icons {
+  display: flex;
+}
+
+.container > .container-nav > .icons > li {
+  padding: 0.5em;
+  list-style: none;
+}
+
+.container > .container-nav > .icons > li > a {
+  color: var(--color);
+}
+
+/* 786px 이하 화면 */
+@media screen and (max-width: 786px){
+
+  .container > .container-nav {
+    display: block;
+    text-align: center;
+  }
+
+  .container > .container-nav > .navbar__toggleBtn {
+    display: block;
+    
+  }
+
+  /* 메뉴 */
+  .container > .container-nav > .menu {
+    display: none;
+    flex-direction: column;
+    padding: var(--padding);
+  }
+
+  .container > .container-nav > .menu > li:hover {
+    background: gray;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 4px;
+  }
+
+  /* 아이콘 */
+  .container > .container-nav > .icons {
+    display: none;
+    justify-content: center;
+    padding-left: 0;
+  }
+
+  .container > .container-nav > .menu.active,
+  .container > .container-nav > .icons.active {
+    display: flex;
+  }
+} 

@@ -1,29 +1,38 @@
-const navSlide = () => {
-  const bi  = document.querySelector('.bi');
-  const nav = document.querySelector('.nav-links');
+const menu = document.querySelector('.menu');
+const icon = document.querySelector('.icons');
+const toggle = document.querySelector('.navbar__toggleBtn')
 
-  const navLinks = document.querySelectorAll('.nav-links li');
+toggle.addEventListener('click', () => {
+  menu.classList.toggle('active');
+  icon.classList.toggle('active');
+});
 
-  bi.addEventListener('click',()=>{
-    // Toggle nav
-    nav.classList.toggle('nav-active');
-    
-    // Animaate links
-    navLinks.forEach((link, index)=>{
-      if( link.style.animation ) {
-        link.style.animation = '';
-      } else {
-        link.style.animation = `navLinkFade 0.5s ease forwards ${ index / 7 + 0.3 }s`;
-      }
-    });
-    // Bi Animation
-    bi.classList.toggle('toggle');
+// const navSlide = () => {
+//   const bi  = document.querySelector('.bi');
+//   const nav = document.querySelector('.nav-links');
 
-  });
-}
+//   const navLinks = document.querySelectorAll('.nav-links li');
 
-navSlide();
+//   bi.addEventListener('click',()=>{
+//     // Toggle nav
+//     nav.classList.toggle('nav-active');
 
-function move() {
-  location.href='../html/discography.html'
-}
+//     // Animaate links
+//     navLinks.forEach((link, index)=>{
+//       if( link.style.animation ) {
+//         link.style.animation = '';
+//       } else {
+//         link.style.animation = `navLinkFade 0.5s ease forwards ${ index / 7 + 0.3 }s`;
+//       }
+//     });
+//     // Bi Animation
+//     bi.classList.toggle('toggle');
+
+//   });
+// }
+
+// navSlide();
+
+// function move() {
+//   location.href='../html/discography.html'
+// }
