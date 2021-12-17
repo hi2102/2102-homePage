@@ -1,3 +1,7 @@
+/* 메인 박스 로드*/
+@import url('../styles/main__style.css'); 
+
+/* 헤더와 푸터 */
 :root {
   --padding: 1em 1.5em;
   --color: rgba(255, 255, 255, 0.97);
@@ -7,11 +11,9 @@
 
 * {
   margin: 0;
+  padding: 0;
   font-family: 'Comfortaa', cursive;
-}
-
-/* 컨테이너 */
-.container {
+  color: var(--color);
   background: var(--background);
 }
 
@@ -20,7 +22,6 @@
   align-items: center;
   justify-content: space-between;
   padding: var(--padding);
-  background: var(--background-color);
 }
 
 /* 햄버거버튼 */
@@ -30,7 +31,6 @@
   top: 18px;
   left: 24px;
   font-size: 2em;
-  color: var(--color);
 }
 
 /* 메뉴 */
@@ -46,13 +46,11 @@
 
 .container > .container-nav > .menu > li > a{
   text-decoration: none;
-  color: var(--color);
 }
 
 .container > .container-nav > .menu > li > a:hover {
   cursor: pointer;
   padding: 0.5em;
-  background: var(--accent-color);
   border-radius: 0.25em;
 }
 
@@ -109,3 +107,14 @@
     display: flex;
   }
 } 
+
+/* 헤더 끝 */
+
+.footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  text-align: center;
+}

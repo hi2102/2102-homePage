@@ -1,0 +1,19 @@
+.main__box {
+  padding: 1em; 
+  display: flex;
+  justify-content: center;
+}
+
+.main__box > .album__info {
+  padding: 1em;
+}
+
+.main__box > .album__info > section > .album__info__title {
+  text-align: center;
+  padding-bottom: 1em;
+}
+
+/* .main__aside {
+  padding: 1em;
+  padding-top: 3.3em;
+} */
